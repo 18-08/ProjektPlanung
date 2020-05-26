@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Accountbestätigung";
+}
+
+<h2>Verify Account</h2>
+
+@if (ViewBag.Status != null && Convert.ToBoolean(ViewBag.Status))
+{
+    <div class="alert alert-success">
+        <strong>Herzlichen Glückwunsch!</strong>
+        <br /><br />Ihr Account wurde erfolgreich freigeschaltet.<br />Klicken Sie @Html.ActionLink("hier", "Login", "Benutzer") um sich einzuloggen.
+    </div>
+}
+else
+{
+    <div class="alert alert-danger">
+        <strong>Error!</strong>@ViewBag.Message
+    </div>
+}

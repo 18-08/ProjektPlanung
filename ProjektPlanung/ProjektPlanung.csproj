@@ -153,6 +153,7 @@
       <DependentUpon>BenutzerModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Erweitert\Benutzer.cs" />
+    <Compile Include="Models\LogIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +214,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Benutzer\Registrierung.cshtml" />
+    <Content Include="Views\Benutzer\VerifyAccount.cshtml" />
+    <Content Include="Views\Benutzer\LogIn.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
